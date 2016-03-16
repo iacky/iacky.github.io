@@ -99,7 +99,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/03/16/hello-world/" data-id="cilupg3o800008xs6wwm6g090" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/03/16/hello-world/" data-id="cilupktn8000099s6b6utgomc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -154,17 +154,20 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm uninstall hexo</span><br></pre></td></tr></table></figure>
 <p>then:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo --no-optional --save</span><br></pre></td></tr></table></figure></p>
 <p>方法二：<br>第五步用 </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo --no-optional</span><br><span class="line">``` ,并从3开始操作(重新操作一遍);</span><br><span class="line"></span><br><span class="line"><span class="comment">##本地查看</span></span><br><span class="line"></span><br><span class="line">现在我们已经搭建起本地的hexo博客了，</span><br><span class="line">执行以下命令(在../blog下)，然后到浏览器输入localhost:4000看看。</span><br><span class="line"></span><br><span class="line">```bash</span><br><span class="line">1.$ hexo generate</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2.$ hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo --no-optional</span><br><span class="line">``` ,并从3开始操作(重新操作一遍);</span><br><span class="line"></span><br><span class="line"><span class="comment">##本地查看</span></span><br><span class="line"></span><br><span class="line">现在我们已经搭建起本地的hexo博客了，</span><br><span class="line">执行以下命令(在../blog下)，然后到浏览器输入localhost:4000看看。</span><br><span class="line"></span><br><span class="line">```bash</span><br><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>##使blog和git相关<br>7.修改_config.yml文件夹下的deply发布节点信息：</p>
 <pre><code>deploy:
       type: git
       repo: git@github.com:iacky/iacky.github.io.git
       branch: master
 </code></pre><p>8.步骤7之前应当完成ssh的git配置，及建库操作。</p>
-<p>9.修改_config.yml后，保存git配置;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g    </span><br><span class="line">($ hexo generate)</span><br></pre></td></tr></table></figure></p>
+<p>9.修改_config.yml后，保存git配置：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
+<p>等同<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p>
 <p>10.应用配置信息：</p>
-<figure class="highlight bash"><figcaption><span>$hexo d		</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">等同</span><br><span class="line">```bash $ hexo deploy</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$hexo</span> d</span><br></pre></td></tr></table></figure>
+<p>等同<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>
 <p>##Bugs:</p>
 <pre><code> 1. 7中的type和git中间有个 空格
  2. hexo ERROR Deployer not found: github  
@@ -181,7 +184,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/03/16/hexo_note/" data-id="cilupg3od00018xs6usw2z3ns" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/03/16/hexo_note/" data-id="cilupktne000199s6wobu4iut" class="article-share-link">Share</a>
       
       
     </footer>
