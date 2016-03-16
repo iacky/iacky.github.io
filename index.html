@@ -53,7 +53,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -99,7 +99,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/03/16/hello-world/" data-id="ciluq1to70000a7s6ryeh3h89" class="article-share-link">Delen</a>
+      <a data-url="http://yoursite.com/2016/03/16/hello-world/" data-id="ciluq4p9a0000ans60jmvykhc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -132,24 +132,24 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="安装初使环境"><a href="#安装初使环境" class="headerlink" title="安装初使环境"></a>安装初使环境</h2><p>1.安装git node.js,可参考其官方网站<a href="https://hexo.io/docs/" target="_blank" rel="external">Hexo</a></p>
-<p>2.安装hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$npm</span> install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
-<p>注:有错,则用 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$sudo</span> npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
+<p>2.安装hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
+<p>注:有错,则用 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
 <h2 id="创建hexo文件夹"><a href="#创建hexo文件夹" class="headerlink" title="创建hexo文件夹"></a>创建hexo文件夹</h2><p>3.创建存放blog的hexo文件夹<br> 创建，如../blog</p>
 <p>4.cd 到blog下</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$hexo</span> init</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
 <p>5.cd 到blog下安装依赖包</p>
 <p>传统方式(default依赖包):</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$npm</span> install</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
 <p>建议使用:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$npm</span> install hexo --no-optional</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo --no-optional</span><br></pre></td></tr></table></figure>
 <p>用传统install方式安装,deploy时可能报错,如下所示：</p>
 <pre><code>&apos;hexo&apos; command shows the error message:
 { [Error: Cannot find module &apos;./build/Release/        DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; }
 { [Error: Cannot find module &apos;./build/default/        DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; }
 { [Error: Cannot find module &apos;./build/Debug/    DTraceProviderBindings&apos;] code: &apos;MODULE_NO
 </code></pre><h2 id="本地查看"><a href="#本地查看" class="headerlink" title="*本地查看"></a>*本地查看</h2><p>6.现在我们已经搭建起本地的hexo博客了，<br>执行以下命令(在../blog下)，然后到浏览器输入localhost:4000看看。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$hexo</span> generate</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$hexo</span> server</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <h2 id="使blog和git相关"><a href="#使blog和git相关" class="headerlink" title="使blog和git相关"></a>使blog和git相关</h2><p>7.修改_config.yml文件夹下的deply发布节点信息：</p>
 <pre><code>deploy:
       type: git
@@ -157,19 +157,19 @@
       branch: master
 </code></pre><p>8.步骤7之前应当完成ssh的git配置，及建库操作。</p>
 <p>9.修改_config.yml后，保存git配置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$hexo g</span><br></pre></td></tr></table></figure>
-<p>等同<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$hexo</span> generate</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
+<p>等同<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p>
 <p>10.应用配置信息：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$hexo</span> d</span><br></pre></td></tr></table></figure>
-<p>等同<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$hexo</span> deploy</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+<p>等同<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>
 <p>11.如deploy报错时，有二种方式可以进行处理：</p>
 <p>方法一：</p>
 <p>first: </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$npm</span> uninstall hexo</span><br></pre></td></tr></table></figure>
-<p>then:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$npm</span> install hexo --no-optional --save</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm uninstall hexo</span><br></pre></td></tr></table></figure>
+<p>then:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo --no-optional --save</span><br></pre></td></tr></table></figure></p>
 <p>方法二：<br>第五步用 </p>
 <p><code>bash 
-$npm install hexo --no-optional</code> ,并从3开始操作(重新操作一遍);</p>
+$ npm install hexo --no-optional</code> ,并从3开始操作(重新操作一遍);</p>
 <h2 id="Bugs"><a href="#Bugs" class="headerlink" title="Bugs:"></a>Bugs:</h2><pre><code> *1. 7中的type和git中间有个 空格
  *2. hexo ERROR Deployer not found: github  
         2.1安装 npm install hexo-deployer-git --save
@@ -187,7 +187,7 @@ $npm install hexo --no-optional</code> ,并从3开始操作(重新操作一遍);
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/03/16/hexo_note/" data-id="ciluq1toc0001a7s68xc1dw61" class="article-share-link">Delen</a>
+      <a data-url="http://yoursite.com/2016/03/16/hexo_note/" data-id="ciluq4p9f0001ans61vc0rbl3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -212,7 +212,7 @@ $npm install hexo --no-optional</code> ,并从3开始操作(重新操作一遍);
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archieven</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li></ul>
     </div>
@@ -222,7 +222,7 @@ $npm install hexo --no-optional</code> ,并从3开始操作(重新操作一遍);
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recente berichten</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
