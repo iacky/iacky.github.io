@@ -99,7 +99,79 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/03/16/hello-world/" data-id="cilunf1im0000szs61e6h2ifv" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/03/16/hello-world/" data-id="ciluns8ps000052s6ruvt7m9t" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello_note" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/03/16/hello_note/" class="article-date">
+  <time datetime="2016-03-16T07:46:17.000Z" itemprop="datePublished">2016-03-16</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/16/hello_note/">Hexo搭建记录</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###安装初使环境</p>
+<p>1.安装git node.js<br><a href="https://hexo.io/docs/" target="_blank" rel="external">https://hexo.io/docs/</a> </p>
+<p>2.安装hexo<br>$ npm install -g hexo-cli</p>
+<p>注:有错用 $sudo npm install -g hexo-cli</p>
+<p>###创建hexo文件夹<br>3.创建存放blog的hexo文件夹<br> 创建，如../blog</p>
+<p>4.cd 到blog下<br>    $ hexo init<br>5.cd 到blog下安装依赖包</p>
+<p>传统:$ npm install，<br>建议使用:$ npm install hexo –no-optional;传统deploy时可能报错如下：</p>
+<pre><code>&apos;hexo&apos; command shows the error message:
+
+{ [Error: Cannot find module &apos;./build/Release/        DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; }
+{ [Error: Cannot find module &apos;./build/default/        DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; }
+{ [Error: Cannot find module &apos;./build/Debug/    DTraceProviderBindings&apos;] code: &apos;MODULE_NO
+</code></pre><p>6.如deploy报错时，第五步用 $ npm install hexo –no-optional，并从3开始操作;</p>
+<p>或者：<br>    first: $ npm uninstall hexo<br>    then: $ npm install hexo –no-optional –save</p>
+<p>###本地查看</p>
+<p>现在我们已经搭建起本地的hexo博客了，<br>执行以下命令(在../blog下)，然后到浏览器输入localhost:4000看看。<br>1.$ hexo generate<br>2.$ hexo server</p>
+<p>###使blog和git相关<br>7.修改_config.yml文件夹下的deply发布节点信息：</p>
+<pre><code>deploy:
+      type: git
+      repo: git@github.com:iacky/iacky.github.io.git
+      branch: master
+</code></pre><p>8.步骤7之前应当完成ssh的git配置，及建库操作。</p>
+<p>9.修改_config.yml后，保存git配置，$ hexo g    ($ hexo generate)</p>
+<p>10.应用配置信息，$hexo d        ($ hexo deploy)</p>
+<p>###Bugs:</p>
+<pre><code> 1. 7中的type和git中间有个 空格
+ 2. hexo ERROR Deployer not found: github  
+        2.1安装 npm install hexo-deployer-git --save
+        2.2将deploy 的 type由github改为git
+ 3.在github部署完成之后，马上访问可能出现404错误，这是正常的，（最多）等待十分钟左右就可以访问了。如果还不行，那很可能是 github 发送给你的验证邮件你没有打开看，据多方反映，验证后就没问题了。
+
+4.如果在hexo d之后出现fatal: &apos;username.github.io&apos; does not appear to be a git repository，一是检查 repo 的名字是否合乎规范、是否含有大写字母、config.yml 中的 deploy 配置是否正确，二是把 git bash 关掉，重新打开再执行命令。
+5.有的同学可能不是 IT 界的，或者对shell 命令不太了解。在要求输入密码时，你输入之后密码是不显示的，这是为了安全，并非是你没输上。
+6.出现乱码的，不要使用 windows 中的「记事本」打开并编辑文件，推荐使用 sublime text，很简单。如果已经在「记事本」中编辑过，需要使用 sublime text 转码为「utf8」。
+7.安装 hexo 时卡在那儿不动，很可能是网络不给力，能全局 break wall 就好了。
+8.遇到什么其他的问题，不妨删除.deploy 和db.json 再重新生成试一试。
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/03/16/hello_note/" data-id="ciluns8px000152s6snxd5qu4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -171,7 +243,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/08/17/hexo_ 搭建记录/" data-id="cilunf1ir0001szs646axwf43" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/08/17/hexo_ 搭建记录/" data-id="ciluns8q0000252s6nnervx7o" class="article-share-link">Share</a>
       
       
     </footer>
@@ -212,6 +284,10 @@
         
           <li>
             <a href="/2016/03/16/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2016/03/16/hello_note/">Hexo搭建记录</a>
           </li>
         
           <li>
