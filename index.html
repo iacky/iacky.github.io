@@ -53,7 +53,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -99,7 +99,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/03/16/hello-world/" data-id="cilupqml700009ps6gmmg9tm7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/03/16/hello-world/" data-id="ciluq1to70000a7s6ryeh3h89" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -131,11 +131,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##安装初使环境</p>
-<p>1.安装git node.js,可参考其官方网站<a href="https://hexo.io/docs/" target="_blank" rel="external">Hexo</a></p>
+        <h2 id="安装初使环境"><a href="#安装初使环境" class="headerlink" title="安装初使环境"></a>安装初使环境</h2><p>1.安装git node.js,可参考其官方网站<a href="https://hexo.io/docs/" target="_blank" rel="external">Hexo</a></p>
 <p>2.安装hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$npm</span> install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
 <p>注:有错,则用 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$sudo</span> npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
-<p>##创建hexo文件夹<br>3.创建存放blog的hexo文件夹<br> 创建，如../blog</p>
+<h2 id="创建hexo文件夹"><a href="#创建hexo文件夹" class="headerlink" title="创建hexo文件夹"></a>创建hexo文件夹</h2><p>3.创建存放blog的hexo文件夹<br> 创建，如../blog</p>
 <p>4.cd 到blog下</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$hexo</span> init</span><br></pre></td></tr></table></figure>
 <p>5.cd 到blog下安装依赖包</p>
@@ -148,15 +147,10 @@
 { [Error: Cannot find module &apos;./build/Release/        DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; }
 { [Error: Cannot find module &apos;./build/default/        DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; }
 { [Error: Cannot find module &apos;./build/Debug/    DTraceProviderBindings&apos;] code: &apos;MODULE_NO
-</code></pre><p>6.如deploy报错时，有二种方式可以进行处理：</p>
-<p>方法一：</p>
-<p>first: </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$npm</span> uninstall hexo</span><br></pre></td></tr></table></figure>
-<p>then:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$npm</span> install hexo --no-optional --save</span><br></pre></td></tr></table></figure></p>
-<p>方法二：<br>第五步用 </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$npm</span> install hexo --no-optional</span><br><span class="line">``` ,并从3开始操作(重新操作一遍);</span><br><span class="line"></span><br><span class="line"><span class="comment">##本地查看</span></span><br><span class="line"></span><br><span class="line">现在我们已经搭建起本地的hexo博客了，</span><br><span class="line">执行以下命令(在../blog下)，然后到浏览器输入localhost:4000看看。</span><br><span class="line"></span><br><span class="line">```bash</span><br><span class="line"><span class="variable">$hexo</span> generate</span><br></pre></td></tr></table></figure>
+</code></pre><h2 id="本地查看"><a href="#本地查看" class="headerlink" title="*本地查看"></a>*本地查看</h2><p>6.现在我们已经搭建起本地的hexo博客了，<br>执行以下命令(在../blog下)，然后到浏览器输入localhost:4000看看。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$hexo</span> generate</span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$hexo</span> server</span><br></pre></td></tr></table></figure>
-<p>##使blog和git相关<br>7.修改_config.yml文件夹下的deply发布节点信息：</p>
+<h2 id="使blog和git相关"><a href="#使blog和git相关" class="headerlink" title="使blog和git相关"></a>使blog和git相关</h2><p>7.修改_config.yml文件夹下的deply发布节点信息：</p>
 <pre><code>deploy:
       type: git
       repo: git@github.com:iacky/iacky.github.io.git
@@ -168,23 +162,32 @@
 <p>10.应用配置信息：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$hexo</span> d</span><br></pre></td></tr></table></figure>
 <p>等同<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$hexo</span> deploy</span><br></pre></td></tr></table></figure></p>
-<p>##Bugs:</p>
-<pre><code> 1. 7中的type和git中间有个 空格
- 2. hexo ERROR Deployer not found: github  
+<p>11.如deploy报错时，有二种方式可以进行处理：</p>
+<p>方法一：</p>
+<p>first: </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$npm</span> uninstall hexo</span><br></pre></td></tr></table></figure>
+<p>then:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$npm</span> install hexo --no-optional --save</span><br></pre></td></tr></table></figure></p>
+<p>方法二：<br>第五步用 </p>
+<p><code>bash 
+$npm install hexo --no-optional</code> ,并从3开始操作(重新操作一遍);</p>
+<h2 id="Bugs"><a href="#Bugs" class="headerlink" title="Bugs:"></a>Bugs:</h2><pre><code> *1. 7中的type和git中间有个 空格
+ *2. hexo ERROR Deployer not found: github  
         2.1安装 npm install hexo-deployer-git --save
         2.2将deploy 的 type由github改为git
- 3.在github部署完成之后，马上访问可能出现404错误，这是正常的，（最多）等待十分钟左右就可以访问了。如果还不行，那很可能是 github 发送给你的验证邮件你没有打开看，据多方反映，验证后就没问题了。
+ *3.在github部署完成之后，马上访问可能出现404错误，这是正常的，（最多）等待十分钟左右就可以访问了。如果还不行，那很可能是 github 发送给你的验证邮件你没有打开看，据多方反映，验证后就没问题了。
 
 4.如果在hexo d之后出现fatal: &apos;username.github.io&apos; does not appear to be a git repository，一是检查 repo 的名字是否合乎规范、是否含有大写字母、config.yml 中的 deploy 配置是否正确，二是把 git bash 关掉，重新打开再执行命令。
 5.有的同学可能不是 IT 界的，或者对shell 命令不太了解。在要求输入密码时，你输入之后密码是不显示的，这是为了安全，并非是你没输上。
 6.出现乱码的，不要使用 windows 中的「记事本」打开并编辑文件，推荐使用 sublime text，很简单。如果已经在「记事本」中编辑过，需要使用 sublime text 转码为「utf8」。
 7.安装 hexo 时卡在那儿不动，很可能是网络不给力，能全局 break wall 就好了。
 8.遇到什么其他的问题，不妨删除.deploy 和db.json 再重新生成试一试。
+
+注：    我碰到其中前三个问题，其他问题为搜集整理而来。
 </code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/03/16/hexo_note/" data-id="cilupqmlc00019ps6h4hqjg49" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/03/16/hexo_note/" data-id="ciluq1toc0001a7s68xc1dw61" class="article-share-link">Delen</a>
       
       
     </footer>
@@ -209,7 +212,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Archieven</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li></ul>
     </div>
@@ -219,7 +222,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Recente berichten</h3>
     <div class="widget">
       <ul>
         
