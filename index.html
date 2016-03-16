@@ -99,7 +99,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/03/16/hello-world/" data-id="ciluns8ps000052s6ruvt7m9t" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/03/16/hello-world/" data-id="cilup8v9z00008bs6q3kpksmi" class="article-share-link">Share</a>
       
       
     </footer>
@@ -131,31 +131,28 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>###安装初使环境</p>
-<p>1.安装git node.js<br><a href="https://hexo.io/docs/" target="_blank" rel="external">https://hexo.io/docs/</a> </p>
-<p>2.安装hexo<br>$ npm install -g hexo-cli</p>
-<p>注:有错用 $sudo npm install -g hexo-cli</p>
-<p>###创建hexo文件夹<br>3.创建存放blog的hexo文件夹<br> 创建，如../blog</p>
-<p>4.cd 到blog下<br>    $ hexo init<br>5.cd 到blog下安装依赖包</p>
-<p>传统:$ npm install，<br>建议使用:$ npm install hexo –no-optional;传统deploy时可能报错如下：</p>
-<pre><code>&apos;hexo&apos; command shows the error message:
-
-{ [Error: Cannot find module &apos;./build/Release/        DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; }
-{ [Error: Cannot find module &apos;./build/default/        DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; }
-{ [Error: Cannot find module &apos;./build/Debug/    DTraceProviderBindings&apos;] code: &apos;MODULE_NO
-</code></pre><p>6.如deploy报错时，第五步用 $ npm install hexo –no-optional，并从3开始操作;</p>
-<p>或者：<br>    first: $ npm uninstall hexo<br>    then: $ npm install hexo –no-optional –save</p>
-<p>###本地查看</p>
-<p>现在我们已经搭建起本地的hexo博客了，<br>执行以下命令(在../blog下)，然后到浏览器输入localhost:4000看看。<br>1.$ hexo generate<br>2.$ hexo server</p>
-<p>###使blog和git相关<br>7.修改_config.yml文件夹下的deply发布节点信息：</p>
+        <p>##安装初使环境</p>
+<p>1.安装git node.js,可参考官方网站<br><a href="https://hexo.io/docs/" target="_blank" rel="external">Hexo</a></p>
+<p>2.安装hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
+<p>注:有错,则用 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$sudo</span> npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
+<p>##创建hexo文件夹<br>3.创建存放blog的hexo文件夹<br> 创建，如../blog</p>
+<p>4.cd 到blog下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
+<p>5.cd 到blog下安装依赖包</p>
+<p>传统方式(default依赖包):</p>
+<figure class="highlight bash"><figcaption><span>$ npm install```，</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">建议使用:</span><br><span class="line"></span><br><span class="line">```bash $ npm install hexo --no-optional```;</span><br><span class="line"></span><br><span class="line">用传统install方式安装,deploy时可能报错,如下所示：</span><br><span class="line"></span><br><span class="line">	<span class="string">'hexo'</span> <span class="built_in">command</span> shows the error message:</span><br><span class="line">	&#123; [Error: Cannot find module <span class="string">'./build/Release/		DTraceProviderBindings'</span>] code: <span class="string">'MODULE_NOT_FOUND'</span> &#125;</span><br><span class="line">	&#123; [Error: Cannot find module <span class="string">'./build/default/		DTraceProviderBindings'</span>] code: <span class="string">'MODULE_NOT_FOUND'</span> &#125;</span><br><span class="line">	&#123; [Error: Cannot find module <span class="string">'./build/Debug/	DTraceProviderBindings'</span>] code: <span class="string">'MODULE_NO</span><br><span class="line"></span><br><span class="line">6.如deploy报错时，有二种方式可以进行处理：</span><br><span class="line"></span><br><span class="line">方法一：</span><br><span class="line"></span><br><span class="line">first: ```bash $ npm uninstall hexo</span></span><br></pre></td></tr></table></figure>
+<p>then:  <figure class="highlight bash"><figcaption><span>$ npm install hexo --no-optional --save```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">	</span><br><span class="line">方法二：</span><br><span class="line"></span><br><span class="line">第五步用 </span><br><span class="line">		</span><br><span class="line">```bash $ npm install hexo --no-optional``` ,并从3开始操作(重新操作一遍);</span><br><span class="line"></span><br><span class="line"><span class="comment">##本地查看</span></span><br><span class="line"></span><br><span class="line">现在我们已经搭建起本地的hexo博客了，</span><br><span class="line">执行以下命令(在../blog下)，然后到浏览器输入localhost:4000看看。</span><br><span class="line"></span><br><span class="line">```bash</span><br><span class="line">1.$ hexo generate</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2.$ hexo server</span><br></pre></td></tr></table></figure>
+<p>##使blog和git相关<br>7.修改_config.yml文件夹下的deply发布节点信息：</p>
 <pre><code>deploy:
       type: git
       repo: git@github.com:iacky/iacky.github.io.git
       branch: master
 </code></pre><p>8.步骤7之前应当完成ssh的git配置，及建库操作。</p>
-<p>9.修改_config.yml后，保存git配置，$ hexo g    ($ hexo generate)</p>
-<p>10.应用配置信息，$hexo d        ($ hexo deploy)</p>
-<p>###Bugs:</p>
+<p>9.修改_config.yml后，保存git配置;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g    </span><br><span class="line">($ hexo generate)</span><br></pre></td></tr></table></figure></p>
+<p>10.应用配置信息：</p>
+<figure class="highlight bash"><figcaption><span>$hexo d		</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">等同</span><br><span class="line">```bash $ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>##Bugs:</p>
 <pre><code> 1. 7中的type和git中间有个 空格
  2. hexo ERROR Deployer not found: github  
         2.1安装 npm install hexo-deployer-git --save
@@ -171,79 +168,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/03/16/hello_note/" data-id="ciluns8px000152s6snxd5qu4" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hexo_ 搭建记录" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/08/17/hexo_ 搭建记录/" class="article-date">
-  <time datetime="2015-08-17T15:48:52.000Z" itemprop="datePublished">2015-08-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/08/17/hexo_ 搭建记录/">Hexo搭建记录</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>###安装初使环境</p>
-<p>1.安装git node.js<br><a href="https://hexo.io/docs/" target="_blank" rel="external">https://hexo.io/docs/</a> </p>
-<p>2.安装hexo<br>$ npm install -g hexo-cli</p>
-<p>注:有错用 $sudo npm install -g hexo-cli</p>
-<p>###创建hexo文件夹<br>3.创建存放blog的hexo文件夹<br> 创建，如../blog</p>
-<p>4.cd 到blog下<br>    $ hexo init<br>5.cd 到blog下安装依赖包</p>
-<p>传统:$ npm install，<br>建议使用:$ npm install hexo –no-optional;传统deploy时可能报错如下：</p>
-<pre><code>&apos;hexo&apos; command shows the error message:
-
-{ [Error: Cannot find module &apos;./build/Release/        DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; }
-{ [Error: Cannot find module &apos;./build/default/        DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; }
-{ [Error: Cannot find module &apos;./build/Debug/    DTraceProviderBindings&apos;] code: &apos;MODULE_NO
-</code></pre><p>6.如deploy报错时，第五步用 $ npm install hexo –no-optional，并从3开始操作;</p>
-<p>或者：<br>    first: $ npm uninstall hexo<br>    then: $ npm install hexo –no-optional –save</p>
-<p>###本地查看</p>
-<p>现在我们已经搭建起本地的hexo博客了，<br>执行以下命令(在../blog下)，然后到浏览器输入localhost:4000看看。<br>1.$ hexo generate<br>2.$ hexo server</p>
-<p>###使blog和git相关<br>7.修改_config.yml文件夹下的deply发布节点信息：</p>
-<pre><code>deploy:
-      type: git
-      repo: git@github.com:iacky/iacky.github.io.git
-      branch: master
-</code></pre><p>8.步骤7之前应当完成ssh的git配置，及建库操作。</p>
-<p>9.修改_config.yml后，保存git配置，$ hexo g    ($ hexo generate)</p>
-<p>10.应用配置信息，$hexo d        ($ hexo deploy)</p>
-<p>###Bugs:</p>
-<pre><code> 1. 7中的type和git中间有个 空格
- 2. hexo ERROR Deployer not found: github  
-        2.1安装 npm install hexo-deployer-git --save
-        2.2将deploy 的 type由github改为git
- 3.在github部署完成之后，马上访问可能出现404错误，这是正常的，（最多）等待十分钟左右就可以访问了。如果还不行，那很可能是 github 发送给你的验证邮件你没有打开看，据多方反映，验证后就没问题了。
-
-4.如果在hexo d之后出现fatal: &apos;username.github.io&apos; does not appear to be a git repository，一是检查 repo 的名字是否合乎规范、是否含有大写字母、config.yml 中的 deploy 配置是否正确，二是把 git bash 关掉，重新打开再执行命令。
-5.有的同学可能不是 IT 界的，或者对shell 命令不太了解。在要求输入密码时，你输入之后密码是不显示的，这是为了安全，并非是你没输上。
-6.出现乱码的，不要使用 windows 中的「记事本」打开并编辑文件，推荐使用 sublime text，很简单。如果已经在「记事本」中编辑过，需要使用 sublime text 转码为「utf8」。
-7.安装 hexo 时卡在那儿不动，很可能是网络不给力，能全局 break wall 就好了。
-8.遇到什么其他的问题，不妨删除.deploy 和db.json 再重新生成试一试。
-</code></pre>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/08/17/hexo_ 搭建记录/" data-id="ciluns8q0000252s6nnervx7o" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/03/16/hello_note/" data-id="cilup8va400018bs6zmdmlqsw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -270,7 +195,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li></ul>
     </div>
   </div>
 
@@ -288,10 +213,6 @@
         
           <li>
             <a href="/2016/03/16/hello_note/">Hexo搭建记录</a>
-          </li>
-        
-          <li>
-            <a href="/2015/08/17/hexo_ 搭建记录/">Hexo搭建记录</a>
           </li>
         
       </ul>
