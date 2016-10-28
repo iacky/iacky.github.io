@@ -84,15 +84,22 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="1.2016.3.21 期间，恰逢bird小伙伴家父有恙来京检查身体。重新进行，开发计划安排，重新排期，重新制定开发计划。协同IOS、后台、产品、设计们，调控开发进度。
+2.2016.3.22在只有需求、原型图的情况下，我开始了3.4版本的开发。今天的目的，在无支付效果图情形下，首先进行，模块搭建，走通安卓支付流程。
+同时研究，Dragger2的依赖注入。A类中用到了B类，现在我们知道依赖注入是什">
+<meta property="og:type" content="article">
+<meta property="og:title" content="3.4版本开发记录">
+<meta property="og:url" content="http://yoursite.com/2016/03/16/3.4_version_note/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description">
+<meta property="og:description" content="1.2016.3.21 期间，恰逢bird小伙伴家父有恙来京检查身体。重新进行，开发计划安排，重新排期，重新制定开发计划。协同IOS、后台、产品、设计们，调控开发进度。
+2.2016.3.22在只有需求、原型图的情况下，我开始了3.4版本的开发。今天的目的，在无支付效果图情形下，首先进行，模块搭建，走通安卓支付流程。
+同时研究，Dragger2的依赖注入。A类中用到了B类，现在我们知道依赖注入是什">
+<meta property="og:updated_time" content="2016-07-25T03:34:51.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description">
+<meta name="twitter:title" content="3.4版本开发记录">
+<meta name="twitter:description" content="1.2016.3.21 期间，恰逢bird小伙伴家父有恙来京检查身体。重新进行，开发计划安排，重新排期，重新制定开发计划。协同IOS、后台、产品、设计们，调控开发进度。
+2.2016.3.22在只有需求、原型图的情况下，我开始了3.4版本的开发。今天的目的，在无支付效果图情形下，首先进行，模块搭建，走通安卓支付流程。
+同时研究，Dragger2的依赖注入。A类中用到了B类，现在我们知道依赖注入是什">
 
 
 
@@ -113,10 +120,10 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/03/16/3.4_version_note/"/>
 
 
-  <title> Hexo </title>
+  <title> 3.4版本开发记录 | Hexo </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="">
@@ -137,9 +144,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
@@ -218,9 +223,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -240,10 +245,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/03/16/3.4_version_note/" itemprop="url">
-                  3.4版本开发记录
-                </a>
+                3.4版本开发记录
               
             
           </h1>
@@ -283,9 +285,7 @@
       
 
       
-        
-          
-            <p>1.2016.3.21 期间，恰逢bird小伙伴家父有恙来京检查身体。重新进行，开发计划安排，重新排期，重新制定开发计划。<br>协同IOS、后台、产品、设计们，调控开发进度。</p>
+        <p>1.2016.3.21 期间，恰逢bird小伙伴家父有恙来京检查身体。重新进行，开发计划安排，重新排期，重新制定开发计划。<br>协同IOS、后台、产品、设计们，调控开发进度。</p>
 <p>2.2016.3.22<br>在只有需求、原型图的情况下，我开始了3.4版本的开发。<br>今天的目的，在无支付效果图情形下，首先进行，模块搭建，走通安卓支付流程。</p>
 <p>同时研究，Dragger2的依赖注入。<br>A类中用到了B类，现在我们知道依赖注入是什么了，也就知道要怎么在代码中应用依赖注入了，所以我们就看看在我们的构造方法或者调用的方法中需要传递哪些依赖把。对于一些简单的依赖，这部分工作确实很好完成，但依赖越复杂，我们需要完成的工作就越繁复。</p>
 <p>Dagger2 概述<br><a href="http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0519/2892.html" target="_blank" rel="external">http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0519/2892.html</a></p>
@@ -334,16 +334,20 @@ zipalign命令： zipalign -v 4 /Users/wangwei/Desktop/generate_apk/3.4/lesdo-sa
 
 参考：http://www.cnblogs.com/wanqieddy/p/3556060.html
 </code></pre>
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -351,266 +355,32 @@ zipalign命令： zipalign -v 4 /Users/wangwei/Desktop/generate_apk/3.4/lesdo-sa
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/03/16/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/03/16/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
-            <time itemprop="dateCreated" datetime="2016-03-16T15:46:17+08:00" content="2016-03-16">
-              2016-03-16
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/03/16/hexo_note/" itemprop="url">
-                  Hexo搭建记录
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
-            <time itemprop="dateCreated" datetime="2016-03-16T15:46:17+08:00" content="2016-03-16">
-              2016-03-16
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="安装初使环境"><a href="#安装初使环境" class="headerlink" title="安装初使环境"></a>安装初使环境</h2><p>1.安装git node.js,可参考其官方网站<a href="https://hexo.io/docs/" target="_blank" rel="external">Hexo</a></p>
-<p>2.安装hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
-<p>注:有错,则用 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
-<h2 id="创建hexo文件夹"><a href="#创建hexo文件夹" class="headerlink" title="创建hexo文件夹"></a>创建hexo文件夹</h2><p>3.创建存放blog的hexo文件夹<br> 创建，如../blog</p>
-<p>4.cd 到blog下</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
-<p>5.cd 到blog下安装依赖包</p>
-<p>传统方式(default依赖包):</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-<p>建议使用:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo --no-optional</span><br></pre></td></tr></table></figure>
-<p>用传统install方式安装,deploy时可能报错,如下所示：</p>
-<pre><code>&apos;hexo&apos; command shows the error message:
-{ [Error: Cannot find module &apos;./build/Release/        DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; }
-{ [Error: Cannot find module &apos;./build/default/        DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; }
-{ [Error: Cannot find module &apos;./build/Debug/    DTraceProviderBindings&apos;] code: &apos;MODULE_NO
-</code></pre><h2 id="本地查看"><a href="#本地查看" class="headerlink" title="*本地查看"></a>*本地查看</h2><p>6.现在我们已经搭建起本地的hexo博客了，<br>执行以下命令(在../blog下)，然后到浏览器输入localhost:4000看看。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<h2 id="使blog和git相关"><a href="#使blog和git相关" class="headerlink" title="使blog和git相关"></a>使blog和git相关</h2><p>7.修改_config.yml文件夹下的deply发布节点信息：</p>
-<pre><code>deploy:
-      type: git
-      repo: git@github.com:iacky/iacky.github.io.git
-      branch: master
-</code></pre><p>8.步骤7之前应当完成ssh的git配置，及建库操作。</p>
-<p>9.修改_config.yml后，保存git配置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-<p>等同<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p>
-<p>10.应用配置信息：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-<p>等同<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>
-<p>11.如deploy报错时，有二种方式可以进行处理：</p>
-<p>方法一：</p>
-<p>first: </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm uninstall hexo</span><br></pre></td></tr></table></figure>
-<p>then:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo --no-optional --save</span><br></pre></td></tr></table></figure></p>
-<p>方法二：<br>第五步用 </p>
-<p><code>bash 
-$ npm install hexo --no-optional</code> ,并从3开始操作(重新操作一遍);</p>
-<h2 id="Bugs"><a href="#Bugs" class="headerlink" title="Bugs:"></a>Bugs:</h2><pre><code> *1. 7中的type和git中间有个 空格
- *2. hexo ERROR Deployer not found: github  
-        2.1安装 npm install hexo-deployer-git --save
-        2.2将deploy 的 type由github改为git
- *3.在github部署完成之后，马上访问可能出现404错误，这是正常的，（最多）等待十分钟左右就可以访问了。如果还不行，那很可能是 github 发送给你的验证邮件你没有打开看，据多方反映，验证后就没问题了。
-
-4.如果在hexo d之后出现fatal: &apos;username.github.io&apos; does not appear to be a git repository，一是检查 repo 的名字是否合乎规范、是否含有大写字母、config.yml 中的 deploy 配置是否正确，二是把 git bash 关掉，重新打开再执行命令。
-5.有的同学可能不是 IT 界的，或者对shell 命令不太了解。在要求输入密码时，你输入之后密码是不显示的，这是为了安全，并非是你没输上。
-6.出现乱码的，不要使用 windows 中的「记事本」打开并编辑文件，推荐使用 sublime text，很简单。如果已经在「记事本」中编辑过，需要使用 sublime text 转码为「utf8」。
-7.安装 hexo 时卡在那儿不动，很可能是网络不给力，能全局 break wall 就好了。
-8.遇到什么其他的问题，不妨删除.deploy 和db.json 再重新生成试一试。
-
-注：    我碰到其中前三个问题，其他问题为搜集整理而来。
-</code></pre>
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -618,6 +388,10 @@ $ npm install hexo --no-optional</code> ,并从3开始操作(重新操作一遍)
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -637,8 +411,17 @@ $ npm install hexo --no-optional</code> ,并从3开始操作(重新操作一遍)
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -674,6 +457,17 @@ $ npm install hexo --no-optional</code> ,并从3开始操作(重新操作一遍)
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">Dieser Artikel hat kein Inhaltsverzeichnis</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -770,6 +564,10 @@ $ npm install hexo --no-optional</code> ,并从3开始操作(重新操作一遍)
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
 
   
 
